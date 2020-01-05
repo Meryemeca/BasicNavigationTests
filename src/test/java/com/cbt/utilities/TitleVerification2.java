@@ -18,6 +18,7 @@ public class TitleVerification2 {
             driver.get(urls.get(i));
             String currentUrl = driver.getCurrentUrl().toLowerCase();
             String currentTitle = driver.getTitle().replaceAll(" ","").toLowerCase();
+
             if(currentUrl.contains(currentTitle)){
                 System.out.println("Test PASSED");
                 System.out.println("  ");
